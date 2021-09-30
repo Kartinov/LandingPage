@@ -1,0 +1,306 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  padding: 30px 100px;
+  background-color: #5279b4;
+}
+
+header {
+  width: 100%;
+}
+
+.nav-logo {
+  display: inline-block;
+}
+
+.nav-logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2em;
+  font-family: 'Pacifico', sans-serif;
+}
+
+nav {
+  display: inline-block;
+  float: right;
+}
+
+nav ul {
+  align-items: center;
+  margin-top: 18px;
+  padding-left: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.heading-image {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.heading h1 {
+  font-family: 'Open Sans';
+  font-size: 5.5em;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 70px;
+}
+
+.image img {
+  margin-left: 20px;
+  width: 450px;
+}
+
+.main {
+  padding: 80px 100px;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  place-items: center;
+}
+
+.card {
+  margin: 0 20px 20px 20px;
+}
+
+.card img {
+  width: 100px;
+}
+
+.card h5 {
+  font-size: 1.2em;
+  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+}
+
+.card p {
+  line-height: 22px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-items: center;
+}
+
+.recent {
+  background-color: #ff8c00;
+  text-align: center;
+  padding: 80px 100px;
+}
+
+.recent h2 {
+  margin-top: 0;
+  color: #fff;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.recent p {
+  color: #ffffff9f;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-size: 90%;
+}
+
+.recent .items {
+  width: 300px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.recent .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  margin-top: 30px;
+}
+
+.background-gray {
+  background-color: gray;
+}
+
+.background-white {
+  background-color: #fff;
+}
+
+.background-tomato {
+  background-color: tomato;
+}
+
+.background-dodger-blue {
+  background-color: dodgerblue;
+}
+
+.background-medium-green {
+  background-color: mediumseagreen;
+}
+
+.background-slate-blue {
+  background-color: slateblue;
+}
+
+.background-violet {
+  background-color: violet;
+}
+
+.background-teal {
+  background-color: teal;
+}
+
+.background-dark-blue {
+  background-color: darkblue;
+}
+
+.show-more {
+  margin-top: 40px;
+}
+
+.show-more a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #2e2d2d;
+  background-color: #fff;
+  padding: 14px 30px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1100px) {
+  .heading-image h1 {
+    font-size: 4.5em;
+    line-height: 60px;
+  }
+
+  .heading-image img {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .container {
+    padding: 30px 50px;
+  }
+
+  .main {
+    padding: 80px 50px;
+  }
+
+  .recent {
+    padding: 80px 50px;
+  }
+
+  .heading h1 {
+    font-size: 3.5em;
+    line-height: 50px;
+  }
+
+  .heading img {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .heading-image {
+    flex-direction: column;
+  }
+
+  .heading-image img {
+    margin-top: 20px;
+  }
+
+  .heading-image .heading {
+    text-align: center;
+  }
+
+  .heading-image .heading h1 {
+    margin: 15px 0;
+  }
+
+  .heading-image #first {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+  }
+
+  .heading-image #second {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .nav-logo,
+  .nav-logo a {
+    display: block;
+    text-align: center;
+  }
+
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    padding: 15px 25px;
+  }
+
+  .heading-image img {
+    width: 250px;
+  }
+
+  .heading-image h1 {
+    font-size: 3em;
+    line-height: 40px;
+  }
+
+  .row {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .recent .items {
+    width: 300px;
+  }
+
+  .recent .item {
+    height: 300px;
+  }
+}
